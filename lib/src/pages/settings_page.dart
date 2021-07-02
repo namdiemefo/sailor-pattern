@@ -66,16 +66,16 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   void _performLogOut() {
-    showDialog(
-      context: context,
-      child: CustomConfirmationDialog(
-        title: 'Do you want to log out?',
-        onCancelPressed: () {
-          Navigator.of(context).pop();
-        },
-        onOkPressed: _sendLogoutEvent,
-      ),
-    );
+    // showDialog(
+    //   context: context,
+    //   child: CustomConfirmationDialog(
+    //     title: 'Do you want to log out?',
+    //     onCancelPressed: () {
+    //       Navigator.of(context).pop();
+    //     },
+    //     onOkPressed: _sendLogoutEvent,
+    //   ),
+    // );
   }
 
   void _sendLogoutEvent() {
